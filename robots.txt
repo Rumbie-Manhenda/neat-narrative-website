@@ -1,0 +1,12 @@
+# Neat Narrative Co. — https://neatnarrative.co.uk
+# Residential and commercial cleaning, Frinton-on-Sea, North East Essex.
+
+User-agent: *
+Allow: /
+
+# The thank-you page is only ever reached after a successful enquiry and
+# carries a noindex tag of its own; keeping it out of the index twice over
+# avoids it turning up in search results on its own.
+Disallow: /thank-you.html
+
+Sitemap: https://neatnarrative.co.uk/sitemap.xml

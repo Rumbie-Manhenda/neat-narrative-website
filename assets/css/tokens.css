@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Neat Narrative Co. — Design tokens
+   Midnight navy + metallic gold. Every value the site uses lives here.
+   ========================================================================== */
+
+:root {
+  /* --- Brand: midnight navy ------------------------------------------- */
+  --navy-950: #050a14;
+  --navy-900: #0a1424;
+  --navy-880: #0c1830;
+  --navy-850: #10203a;
+  --navy-800: #16294a;
+  --navy-700: #1e3a61;
+  --navy-600: #2a5080;
+  --navy-500: #3a6699;
+
+  /* --- Brand: metallic gold ------------------------------------------- */
+  --gold-50: #fbf6e9;
+  --gold-100: #f5ead0;
+  --gold-200: #edd9a8;
+  --gold-300: #e2c57f;
+  --gold-400: #d4af5e;
+  --gold-500: #c9a44c;
+  --gold-600: #ae8a35;
+  --gold-700: #8c6c25;
+  --gold-800: #6b511b;
+
+  /* --- Neutrals -------------------------------------------------------- */
+  --white: #ffffff;
+  --ivory-50: #fcfaf6;
+  --ivory-100: #f7f3eb;
+  --ivory-200: #ede7da;
+  --ivory-300: #ded5c3;
+  --slate-400: #8f99ac;
+  --slate-500: #6b7385;
+  --slate-600: #4a5164;
+
+  /* --- Surfaces & text ------------------------------------------------- */
+  --surface-navy: var(--navy-900);
+  --surface-navy-deep: var(--navy-950);
+  --surface-navy-raised: var(--navy-850);
+  --surface-light: var(--ivory-100);
+  --surface-light-raised: var(--white);
+  --surface-dark-glass: rgba(10, 20, 36, 0.72);
+
+  --text-primary: var(--ivory-50);
+  --text-secondary: #aeb8c9;
+  --text-muted: #8d97a9;
+  --text-on-light: var(--navy-900);
+  --text-on-light-soft: #4c5567;
+  --text-gold: var(--gold-400);
+
+  --border-subtle: rgba(201, 164, 76, 0.22);
+  --border-strong: rgba(201, 164, 76, 0.45);
+  --border-on-light: rgba(10, 20, 36, 0.1);
+  --border-on-light-strong: rgba(10, 20, 36, 0.2);
+
+  /* --- Gradients ------------------------------------------------------- */
+  --gradient-gold: linear-gradient(
+    135deg,
+    var(--gold-700) 0%,
+    var(--gold-500) 18%,
+    #f0dda6 46%,
+    var(--gold-500) 64%,
+    var(--gold-700) 100%
+  );
+  --gradient-gold-soft: linear-gradient(
+    135deg,
+    var(--gold-300) 0%,
+    var(--gold-500) 55%,
+    var(--gold-600) 100%
+  );
+  --gradient-navy: linear-gradient(180deg, var(--navy-900) 0%, var(--navy-950) 100%);
+  --gradient-navy-veil: linear-gradient(
+    180deg,
+    rgba(5, 10, 20, 0.35) 0%,
+    rgba(5, 10, 20, 0.72) 55%,
+    rgba(5, 10, 20, 0.94) 100%
+  );
+  --gradient-champagne: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(245, 234, 208, 0.6) 45%,
+    rgba(212, 175, 94, 0.34) 100%
+  );
+  --gradient-hairline: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--gold-600) 22%,
+    var(--gold-300) 50%,
+    var(--gold-600) 78%,
+    transparent 100%
+  );
+
+  /* --- Typography ------------------------------------------------------ */
+  --font-display: "Barlow Condensed", "Oswald", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  --font-accent: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+
+  --fs-2xs: 0.75rem;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1.0625rem;
+  --fs-md: clamp(1.125rem, 1.05rem + 0.3vw, 1.3rem);
+  --fs-lg: clamp(1.3rem, 1.15rem + 0.65vw, 1.75rem);
+  --fs-xl: clamp(1.7rem, 1.35rem + 1.5vw, 2.5rem);
+  --fs-2xl: clamp(2.2rem, 1.55rem + 2.9vw, 3.9rem);
+  --fs-3xl: clamp(2.6rem, 1.5rem + 5vw, 5.75rem);
+
+  --lh-tight: 1.04;
+  --lh-snug: 1.16;
+  --lh-heading: 1.24;
+  --lh-body: 1.7;
+
+  --ls-display: 0.01em;
+  --ls-eyebrow: 0.24em;
+  --ls-wordmark: 0.14em;
+
+  /* --- Space ----------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3.5rem;
+  --space-9: 5rem;
+  --space-10: 7rem;
+  --gutter: clamp(1.15rem, 0.6rem + 2.4vw, 2.75rem);
+  --section-y: clamp(3.5rem, 2rem + 6vw, 7.5rem);
+  --section-y-tight: clamp(2.75rem, 1.75rem + 4vw, 5rem);
+
+  /* --- Radii ----------------------------------------------------------- */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 34px;
+  --radius-pill: 999px;
+  /* Elegant curved mask inspired by the brand's promotional designs */
+  --radius-arch: 46% 46% var(--radius-lg) var(--radius-lg) / 26% 26% var(--radius-lg)
+    var(--radius-lg);
+  --radius-arch-soft: 34% 34% var(--radius-lg) var(--radius-lg) / 16% 16% var(--radius-lg)
+    var(--radius-lg);
+
+  /* --- Elevation ------------------------------------------------------- */
+  --shadow-sm: 0 1px 2px rgba(5, 10, 20, 0.16), 0 2px 8px rgba(5, 10, 20, 0.12);
+  --shadow-md: 0 12px 30px -12px rgba(5, 10, 20, 0.42), 0 2px 8px rgba(5, 10, 20, 0.16);
+  --shadow-lg: 0 30px 70px -28px rgba(5, 10, 20, 0.6), 0 6px 18px rgba(5, 10, 20, 0.2);
+  --shadow-gold: 0 14px 34px -14px rgba(201, 164, 76, 0.55);
+  --shadow-inset-hairline: inset 0 0 0 1px var(--border-subtle);
+
+  /* --- Motion ---------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur: 260ms;
+  --dur-slow: 520ms;
+
+  /* --- Layout ---------------------------------------------------------- */
+  --container: 1200px;
+  --container-wide: 1360px;
+  --container-narrow: 780px;
+  --header-h: 76px;
+  --mobilebar-h: 60px;
+  --z-header: 100;
+  --z-drawer: 200;
+  --z-lightbox: 300;
+  --z-mobilebar: 150;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --header-h: 96px;
+  }
+}
