@@ -93,9 +93,6 @@ assets/images/
   _originals/         The untouched source images
   icon-*.png          App icons, plus the social sharing image og-neat-narrative.jpg
 
-tools/                Development scripts, not part of the site (see section 9)
-```
-
 ## Editing content
 
 Each page is self-contained: the header, footer and mobile bar are repeated in
